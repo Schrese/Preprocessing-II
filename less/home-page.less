@@ -1,7 +1,16 @@
 .home {
 
+  @media @tablet {
+    width: 98%;
+    padding-left: 3%;
+  }
+
   .funBus {
     border-bottom: 1px dashed black;
+
+    @media @tablet {
+      padding-left: 5%;
+    }
 
     @media @phone {
       padding-left: 5%;
@@ -17,6 +26,9 @@
       padding-bottom: 5%;
     }
     img {
+      @media @tablet {
+        width: 95%;
+      }
       @media @phone {
         width: 95%;
         margin: 0 auto;
@@ -29,6 +41,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
+    @media @tablet {
+      width: 95%;
+      padding-left: 5%;
+    }
 
     @media @phone {
       display: flex;
@@ -105,6 +122,13 @@
     display: flex;
     justify-content: space-between;
 
+    @media @tablet {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      padding-left: 5%;
+    }
+
     @media @phone {
       display: flex;
       flex-direction: column;
@@ -115,6 +139,14 @@
     .destination {
       width: 30%;
       margin-bottom: 30px;
+
+      @media @tablet {
+        display: flex;
+        flex-direction: column;
+        padding-left: 5%;
+        width: 90%;
+
+      }
 
       @media @phone {
         display: flex;
@@ -128,6 +160,11 @@
 
       .btn {
         .custom-btn();
+
+        @media @tablet {
+          width: 100%;
+          padding-top: 3%;
+        }
 
         @media @phone {
           width: 100%;
