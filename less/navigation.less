@@ -9,9 +9,23 @@
     align-items: center;
     border-bottom: 1px dashed black;
 
+    @media @phone {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 2%;
+    }
+
     .fun {
         width: 25%;
         
+        @media @phone {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
         h1 {
             display: flex;
             justify-content: flex-start;
@@ -21,6 +35,10 @@
     .navRight {
         display: flex;
         width: 60%;
+
+        @media @phone {
+            width: 100%;
+        }
 
         nav {
             display: flex;
@@ -34,6 +52,10 @@
                 color: grey;
                 padding: 5%;
                 margin: 0 auto;
+
+                @media @phone {
+                    font-size: 1.3rem;
+                }
             }
         }
     }
