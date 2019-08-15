@@ -12,11 +12,12 @@
     border-radius: 15px;
     color: @font-color;
 
-    &:hover {
-        background-color: #191970;
-        color: #FF8C00;
-        transition: 0.3s;
-        width: 225px;
-
-    }
+    @media all and (min-width: 900px) {
+        &:hover  {
+            background-color: #191970;
+            color: #FF8C00;
+            transition: 0.3s;
+            width: 225px;
+        }
+        }
 }
